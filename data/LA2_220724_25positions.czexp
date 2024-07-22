@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HardwareExperiment Version="1.1">
+  <RunMode>ValidateAndAdaptBeforePerformEnabled,OptimizeBeforePerformEnabled</RunMode>
+  <BeforeHardwareSetting></BeforeHardwareSetting>
+  <AfterHardwareSetting></AfterHardwareSetting>
+  <ExperimentBlockIndex>0</ExperimentBlockIndex>
+  <IsSegmented>false</IsSegmented>
+  <IsStandardMode>true</IsStandardMode>
+  <AutoSave IsActivated="false" EnableSingleFileSave="false">
+    <StorageFolder>C:\Users\LSM User\Pictures</StorageFolder>
+    <Name>New</Name>
+    <IsAutoSubFolder>true</IsAutoSubFolder>
+    <IsAutoSubFolderExternal>true</IsAutoSubFolderExternal>
+    <IsClosedOnCompletion>false</IsClosedOnCompletion>
+    <SingleFileSaveFormat>JPG</SingleFileSaveFormat>
+    <ConvertTo8Bit>false</ConvertTo8Bit>
+    <AddXmlMetadata>false</AddXmlMetadata>
+    <ApplyDisplayMappings>false</ApplyDisplayMappings>
+    <SaveOriginalData>true</SaveOriginalData>
+    <UseChannelNames>false</UseChannelNames>
+    <Quality>90</Quality>
+    <CompressionMethod>None</CompressionMethod>
+    <SingleFileSaveDestinationFolder>C:\Users\LSM User\Pictures</SingleFileSaveDestinationFolder>
+    <SingleFileName>New</SingleFileName>
+    <DimensionsForSeparateFolders>-C;-T;-Z;-S</DimensionsForSeparateFolders>
+  </AutoSave>
+  <BlockExecutionOrder>1</BlockExecutionOrder>
+  <LoopDefinitions />
+  <ExperimentBlocks>
+    <AcquisitionBlock IsActivated="true" BlockReference="638572391854375850">
+      <RunMode>ComponentUpdateEnabled,StateUpdateEnabled</RunMode>
+      <SubDimensionSetups>
+        <RegionsSetup IsActivated="true">
+          <SampleHolder>
+            <Overlap>0.1</Overlap>
+            <ScanMode>Comb</ScanMode>
+            <PositionedRegionsScanMode>FirstYThenX</PositionedRegionsScanMode>
+            <TemplateShapesScanMode>Comb</TemplateShapesScanMode>
+            <IsConstantTiles>false</IsConstantTiles>
+            <TileRegionAnchorMode>Center</TileRegionAnchorMode>
+            <StageReferencePoint>0,0</StageReferencePoint>
+            <UseStageBacklashCorrection>false</UseStageBacklashCorrection>
+            <UseFocusBacklashCorrection>false</UseFocusBacklashCorrection>
+            <IsOptimizedPositionedRegionsSorting>false</IsOptimizedPositionedRegionsSorting>
+            <IsOptimizedTemplateShapesSorting>true</IsOptimizedTemplateShapesSorting>
+            <UseStageContinualSpeed>false</UseStageContinualSpeed>
+            <StageContinualSpeed>1</StageContinualSpeed>
+            <MoveToLoadPositionBetweenShapes>false</MoveToLoadPositionBetweenShapes>
+            <SplitScenesInSeparateFiles>false</SplitScenesInSeparateFiles>
+            <TileRegionCoveringMode>AlignedToLocalTileRegion</TileRegionCoveringMode>
+            <TileRegionAllowedScanArea>Empty</TileRegionAllowedScanArea>
+            <TemplateShapesFillMode>FillGrade</TemplateShapesFillMode>
+            <TemplateShapesFillGrade>1</TemplateShapesFillGrade>
+            <TemplateShapesFillWidth>10</TemplateShapesFillWidth>
+            <TemplateShapesFillHeight>10</TemplateShapesFillHeight>
+            <IsOnlineStitchingEnabled>false</IsOnlineStitchingEnabled>
+            <IsOnlinePyramidEnabled>true</IsOnlinePyramidEnabled>
+            <GlobalInterpolationExpansionDegree>1</GlobalInterpolationExpansionDegree>
+            <LocalInterpolationExpansionDegree>1</LocalInterpolationExpansionDegree>
+            <IsFocusSurfaceOutlierRemovingEnabled>true</IsFocusSurfaceOutlierRemovingEnabled>
+            <FocusSurfaceOutlierExpansionDegree>1</FocusSurfaceOutlierExpansionDegree>
+            <FocusSurfaceOutlierThresholdSigma>2.75</FocusSurfaceOutlierThresholdSigma>
+            <OnlineStitchingParameter>
+              <UseFocusReferenceChannel>true</UseFocusReferenceChannel>
+              <ReferenceChannelId>0</ReferenceChannelId>
+            </OnlineStitchingParameter>
+            <TileRegions />
+            <SingleTileRegions>
+              <SingleTileRegion Name="P1" Id="638572432514052221">
+                <X>-49947</X>
+                <Y>9391.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P2" Id="638572432538563624">
+                <X>-51010</X>
+                <Y>9391.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P3" Id="638572432561804954">
+                <X>-52112.752</X>
+                <Y>9391.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P4" Id="638572432594886848">
+                <X>-53303.752</X>
+                <Y>9391.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P5" Id="638572432624088519">
+                <X>-54585</X>
+                <Y>9391.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P6" Id="638572432651200070">
+                <X>-54585</X>
+                <Y>8751.5</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P7" Id="638572432671201215">
+                <X>-54585</X>
+                <Y>7903.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P8" Id="638572432693522493">
+                <X>-54585</X>
+                <Y>6847.25</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P9" Id="638572432718723936">
+                <X>-54585</X>
+                <Y>5809.25</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P10" Id="638572433118276814">
+                <X>-51009.5</X>
+                <Y>8724.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P11" Id="638572433135767815">
+                <X>-51009.5</X>
+                <Y>8013</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P12" Id="638572433151278703">
+                <X>-51009.5</X>
+                <Y>7311.25</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P13" Id="638572433171919885">
+                <X>-51009.5</X>
+                <Y>6495.25</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P14" Id="638572433253844572">
+                <X>-52113.252</X>
+                <Y>8750.25</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P15" Id="638572433271765598">
+                <X>-52113.252</X>
+                <Y>7998.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P16" Id="638572433288726569">
+                <X>-52113.252</X>
+                <Y>6945.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P17" Id="638572433310577820">
+                <X>-52113.252</X>
+                <Y>5901.25</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P18" Id="638572433366641027">
+                <X>-53304.252</X>
+                <Y>8692.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P19" Id="638572433387522223">
+                <X>-53304.252</X>
+                <Y>8171.5</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P20" Id="638572433405843272">
+                <X>-53304.252</X>
+                <Y>7361.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P21" Id="638572433425124375">
+                <X>-53304.252</X>
+                <Y>6441.5</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P22" Id="638572433548801450">
+                <X>-49946.5</X>
+                <Y>8639.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P23" Id="638572433562402229">
+                <X>-49946.5</X>
+                <Y>7996.75</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P24" Id="638572433578003123">
+                <X>-49946.5</X>
+                <Y>7267.5</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+              <SingleTileRegion Name="P25" Id="638572433599124332">
+                <X>-49946.5</X>
+                <Y>6429.25</Y>
+                <Z>5048.87</Z>
+                <IsUsedForAcquisition>true</IsUsedForAcquisition>
+              </SingleTileRegion>
+            </SingleTileRegions>
+            <SingleTileRegionArrays />
+          </SampleHolder>
+          <SubDimensionSetups>
+            <TilesSetup IsActivated="true">
+              <SubDimensionSetups>
+                <MultiTrackSetup IsActivated="true">
+                  <IsTIRFAngleSynchronized>true</IsTIRFAngleSynchronized>
+                  <ImagingDepth>0</ImagingDepth>
+                  <Track IsActivated="true" IsSelected="true">
+                    <DetectionModeSetup>
+                      <Zeiss.Micro.Acquisition.WfTrackDetectionMode />
+                    </DetectionModeSetup>
+                    <BeforeHardwareSetting>BF</BeforeHardwareSetting>
+                    <AfterHardwareSetting>BFclose</AfterHardwareSetting>
+                    <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
+                    <TrackName></TrackName>
+                    <ZStackMode>Yes</ZStackMode>
+                    <UseZStackCenter>true</UseZStackCenter>
+                    <ZStackSliceIndex>1</ZStackSliceIndex>
+                    <IsDisabledForApoTome>true</IsDisabledForApoTome>
+                    <FocusOffset>0</FocusOffset>
+                    <DirectDevice>Standard</DirectDevice>
+                    <Channels>
+                      <Channel IsActivated="true" IsSelected="true" ChannelSetupId="634721599431325723" Name="TL Brightfield" Description="">
+                        <Color>#FFFFFFFF</Color>
+                        <PixelShiftX>0</PixelShiftX>
+                        <PixelShiftY>0</PixelShiftY>
+                        <DataGrabberSetup>
+                          <CameraFrameSetup Id="MTBCamera_MTBBaseportChanger_Frontport.AxioCamMRm3">
+                            <ExposureTime IsActivated="true">2</ExposureTime>
+                            <Adjust IsActivated="true">1</Adjust>
+                            <AutoExposure IsActivated="true">false</AutoExposure>
+                            <EMGain>0</EMGain>
+                            <ShadingReference IsActivated="true">false</ShadingReference>
+                            <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+                          </CameraFrameSetup>
+                        </DataGrabberSetup>
+                        <ContrastMethod>
+                          <Name>TL Brightfield</Name>
+                          <ShortName>Brigh</ShortName>
+                          <Description></Description>
+                          <IlluminationType>Transmitted</IlluminationType>
+                          <ContrastMethods>TransmittedLightBrightfield</ContrastMethods>
+                          <ContrastTypes>BrightField</ContrastTypes>
+                          <Color>#FFFFFFFF</Color>
+                        </ContrastMethod>
+                      </Channel>
+                    </Channels>
+                  </Track>
+                  <Track IsActivated="true" IsSelected="false">
+                    <DetectionModeSetup>
+                      <Zeiss.Micro.Acquisition.WfTrackDetectionMode />
+                    </DetectionModeSetup>
+                    <BeforeHardwareSetting>GFP_camera</BeforeHardwareSetting>
+                    <AfterHardwareSetting>GFP_Off</AfterHardwareSetting>
+                    <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
+                    <TrackName></TrackName>
+                    <ZStackMode>Yes</ZStackMode>
+                    <UseZStackCenter>true</UseZStackCenter>
+                    <ZStackSliceIndex>1</ZStackSliceIndex>
+                    <IsDisabledForApoTome>true</IsDisabledForApoTome>
+                    <FocusOffset>0</FocusOffset>
+                    <DirectDevice>Standard</DirectDevice>
+                    <Channels>
+                      <Channel IsActivated="true" IsSelected="false" ChannelSetupId="634721600519126072" Name="EGFP" Description="">
+                        <Color>#FF00FF5B</Color>
+                        <PixelShiftX>0</PixelShiftX>
+                        <PixelShiftY>0</PixelShiftY>
+                        <DataGrabberSetup>
+                          <CameraFrameSetup Id="Settings">
+                            <ExposureTime IsActivated="true">800</ExposureTime>
+                            <Adjust IsActivated="true">1</Adjust>
+                            <AutoExposure IsActivated="true">false</AutoExposure>
+                            <EMGain>0</EMGain>
+                            <ShadingReference IsActivated="true">false</ShadingReference>
+                            <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+                          </CameraFrameSetup>
+                        </DataGrabberSetup>
+                        <FluorescenceDye>
+                          <Name>EGFP</Name>
+                          <ShortName>EGFP</ShortName>
+                          <Description></Description>
+                          <IlluminationType>Fluorescence</IlluminationType>
+                          <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
+                          <ContrastTypes>Unknown</ContrastTypes>
+                          <Color>#FF00FF5B</Color>
+                          <dye_id>McNamara-Boswell-0828</dye_id>
+                          <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
+                        </FluorescenceDye>
+                      </Channel>
+                    </Channels>
+                  </Track>
+                  <Track IsActivated="false" IsSelected="false">
+                    <DetectionModeSetup>
+                      <Zeiss.Micro.Acquisition.WfTrackDetectionMode />
+                    </DetectionModeSetup>
+                    <BeforeHardwareSetting>RFP_camera</BeforeHardwareSetting>
+                    <AfterHardwareSetting>RFP_Off</AfterHardwareSetting>
+                    <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
+                    <TrackName></TrackName>
+                    <ZStackMode>Yes</ZStackMode>
+                    <UseZStackCenter>true</UseZStackCenter>
+                    <ZStackSliceIndex>1</ZStackSliceIndex>
+                    <IsDisabledForApoTome>true</IsDisabledForApoTome>
+                    <FocusOffset>0</FocusOffset>
+                    <DirectDevice>Standard</DirectDevice>
+                    <Channels>
+                      <Channel IsActivated="false" IsSelected="false" ChannelSetupId="634721590647587325" Name="mCherry" Description="">
+                        <Color>#FFFF0900</Color>
+                        <PixelShiftX>0</PixelShiftX>
+                        <PixelShiftY>0</PixelShiftY>
+                        <DataGrabberSetup>
+                          <CameraFrameSetup Id="Settings">
+                            <ExposureTime IsActivated="true">897.6</ExposureTime>
+                            <Adjust IsActivated="true">1</Adjust>
+                            <AutoExposure IsActivated="true">false</AutoExposure>
+                            <EMGain>0</EMGain>
+                            <ShadingReference IsActivated="true">false</ShadingReference>
+                            <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+                          </CameraFrameSetup>
+                        </DataGrabberSetup>
+                        <FluorescenceDye>
+                          <Name>mCherry</Name>
+                          <ShortName>mCher</ShortName>
+                          <Description></Description>
+                          <IlluminationType>Fluorescence</IlluminationType>
+                          <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
+                          <ContrastTypes>Unknown</ContrastTypes>
+                          <Color>#FFFF0900</Color>
+                          <dye_id>McNamara-Boswell-1238</dye_id>
+                          <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
+                        </FluorescenceDye>
+                      </Channel>
+                    </Channels>
+                  </Track>
+                  <SubDimensionSetups />
+                </MultiTrackSetup>
+              </SubDimensionSetups>
+            </TilesSetup>
+          </SubDimensionSetups>
+        </RegionsSetup>
+        <PanoramaSetup IsActivated="false">
+          <SubDimensionSetups />
+        </PanoramaSetup>
+        <HalfPupilSetup IsActivated="false">
+          <IsContainerAdaptionEnabled>true</IsContainerAdaptionEnabled>
+          <StartAngle>0</StartAngle>
+          <SubDimensionSetups />
+        </HalfPupilSetup>
+        <LiveSetup IsActivated="false">
+          <SubDimensionSetups />
+        </LiveSetup>
+        <TimeSeriesSetup IsActivated="false">
+          <IsInteractive>true</IsInteractive>
+          <IsLongAsPossible>false</IsLongAsPossible>
+          <IsBurstMode>false</IsBurstMode>
+          <Duration>
+            <Cycles>2</Cycles>
+          </Duration>
+          <IsFastAsPossible>false</IsFastAsPossible>
+          <Interval>
+            <TimeSpan>
+              <Value>5</Value>
+              <DefaultUnitFormat>s</DefaultUnitFormat>
+            </TimeSpan>
+          </Interval>
+          <BeforeHardwareSetting></BeforeHardwareSetting>
+          <AfterHardwareSetting></AfterHardwareSetting>
+          <StartMode>
+            <Manual />
+          </StartMode>
+          <StopMode>
+            <Manual />
+          </StopMode>
+          <PauseBeginMode>
+            <Manual />
+          </PauseBeginMode>
+          <PauseEndMode>
+            <Manual />
+          </PauseEndMode>
+          <SwitchCollection>
+            <Switch Name="Switch" Description="Description" Shortcut="Shortcut">
+              <UseColor>false</UseColor>
+              <Color>#FF7CFC00</Color>
+              <SwitchAction>
+                <None>
+                  <Text></Text>
+                </None>
+              </SwitchAction>
+            </Switch>
+          </SwitchCollection>
+          <SubDimensionSetups />
+        </TimeSeriesSetup>
+        <ZStackSetup IsActivated="false">
+          <IsCenterMode>false</IsCenterMode>
+          <IsIntervalKept>true</IsIntervalKept>
+          <Offset>0</Offset>
+          <RefractiveIndexCorrection>0</RefractiveIndexCorrection>
+          <UseFocusBacklashCorrection>false</UseFocusBacklashCorrection>
+          <First>
+            <Distance>
+              <Value>0.00283471</Value>
+              <DefaultUnitFormat>um</DefaultUnitFormat>
+            </Distance>
+          </First>
+          <Last>
+            <Distance>
+              <Value>0.0030605199999999993</Value>
+              <DefaultUnitFormat>um</DefaultUnitFormat>
+            </Distance>
+          </Last>
+          <Interval>
+            <Distance>
+              <Value>9.9999999999999991E-06</Value>
+              <DefaultUnitFormat>um</DefaultUnitFormat>
+            </Distance>
+          </Interval>
+          <SetupExtensions />
+          <SubDimensionSetups />
+        </ZStackSetup>
+        <CPMPixelSourceSetup IsActivated="false">
+          <SubDimensionSetups />
+        </CPMPixelSourceSetup>
+        <CorrelativeSetup IsActivated="false">
+          <HolderDocument>
+            <Image />
+            <Delta1To2>
+              <X>0</X>
+              <Y>0</Y>
+            </Delta1To2>
+            <Delta2To3>
+              <X>0</X>
+              <Y>0</Y>
+            </Delta2To3>
+            <HolderName></HolderName>
+            <IsReadOnly>false</IsReadOnly>
+            <Calibration>
+              <Marker1>
+                <X>NaN</X>
+                <Y>NaN</Y>
+                <Z>NaN</Z>
+              </Marker1>
+              <Marker2>
+                <X>NaN</X>
+                <Y>NaN</Y>
+                <Z>NaN</Z>
+              </Marker2>
+              <Marker3>
+                <X>NaN</X>
+                <Y>NaN</Y>
+                <Z>NaN</Z>
+              </Marker3>
+            </Calibration>
+          </HolderDocument>
+          <SubDimensionSetups />
+        </CorrelativeSetup>
+      </SubDimensionSetups>
+      <HelperSetups>
+        <AcquisitionModeSetup IsActivated="true">
+          <SelectedDetector>MTBCamera_MTBBaseportChanger_Frontport.AxioCamMRm3</SelectedDetector>
+          <Detectors>
+            <Camera Id="CameraUnmounted0.AxioCamMRm3">
+              <ApplyImageOrientation Status="Valid">true</ApplyImageOrientation>
+              <ExposureTime Status="Valid" IsActivated="true">3.4</ExposureTime>
+              <Frame Status="Valid">0,0,1388,1040</Frame>
+              <CameraGeometry Status="Valid"></CameraGeometry>
+              <ImageOrientation Status="Valid">0</ImageOrientation>
+              <ContinuousAcquisitionSafeMode Status="Valid">true</ContinuousAcquisitionSafeMode>
+              <TTLOut2Mode Status="Valid">0</TTLOut2Mode>
+              <NIRMode Status="Valid">false</NIRMode>
+              <ShadingReference Status="Valid">false</ShadingReference>
+              <Resolution Status="Valid">0</Resolution>
+              <BinningList Status="Valid">0</BinningList>
+              <LiveMode Status="Valid">0</LiveMode>
+              <Trigger Status="Valid">false</Trigger>
+              <TriggerMode Status="Valid">0</TriggerMode>
+              <SnapShutter Status="Valid">false</SnapShutter>
+              <LiveShutter Status="Valid">false</LiveShutter>
+              <ShutterMode Status="Valid">0</ShutterMode>
+              <ShutterOpenDelay Status="Valid">0</ShutterOpenDelay>
+              <NoiseFilter Status="Valid">false</NoiseFilter>
+              <NoiseFilterThreshold Status="Valid">1.5</NoiseFilterThreshold>
+              <UnsharpMask Status="Valid">false</UnsharpMask>
+              <UnsharpMaskState Status="Valid"></UnsharpMaskState>
+              <DualCameraCalibrationId Status="Valid">None</DualCameraCalibrationId>
+              <DualCameraCalibration Status="Valid">false</DualCameraCalibration>
+              <AutoExposureFrame Status="Valid">Empty</AutoExposureFrame>
+              <Adjust Status="Valid" IsActivated="true">1</Adjust>
+              <AutoExposure Status="Valid" IsActivated="true">false</AutoExposure>
+              <BlackReference Status="Valid">false</BlackReference>
+              <ReferenceImageCount Status="Valid">3</ReferenceImageCount>
+              <ShadingReferenceId Status="Valid">None</ShadingReferenceId>
+              <Binning Status="Valid">1,1</Binning>
+            </Camera>
+            <Camera Id="MTBCamera_MTBBaseportChanger_Frontport.AxioCamMRm3">
+              <ApplyImageOrientation Status="Valid">true</ApplyImageOrientation>
+              <ExposureTime Status="Valid">2</ExposureTime>
+              <Frame Status="Valid">0,0,1388,1040</Frame>
+              <CameraGeometry Status="Valid"></CameraGeometry>
+              <ImageOrientation Status="Valid">0</ImageOrientation>
+              <ContinuousAcquisitionSafeMode Status="Valid">true</ContinuousAcquisitionSafeMode>
+              <TTLOut2Mode Status="Valid">0</TTLOut2Mode>
+              <NIRMode Status="Valid">false</NIRMode>
+              <ShadingReference Status="Valid">false</ShadingReference>
+              <Resolution Status="Valid">0</Resolution>
+              <BinningList Status="Valid">0</BinningList>
+              <LiveMode Status="Valid">0</LiveMode>
+              <Trigger Status="Valid">false</Trigger>
+              <TriggerMode Status="Valid">0</TriggerMode>
+              <SnapShutter Status="Valid">false</SnapShutter>
+              <LiveShutter Status="Valid">false</LiveShutter>
+              <ShutterMode Status="Valid">0</ShutterMode>
+              <ShutterOpenDelay Status="Valid">0</ShutterOpenDelay>
+              <NoiseFilter Status="Valid">false</NoiseFilter>
+              <NoiseFilterThreshold Status="Valid">1.5</NoiseFilterThreshold>
+              <UnsharpMask Status="Valid">false</UnsharpMask>
+              <UnsharpMaskState Status="Valid"></UnsharpMaskState>
+              <DualCameraCalibrationId Status="Valid">None</DualCameraCalibrationId>
+              <DualCameraCalibration Status="Valid">false</DualCameraCalibration>
+              <AutoExposureFrame Status="Valid">Empty</AutoExposureFrame>
+              <Adjust Status="Valid">1</Adjust>
+              <AutoExposure Status="Valid">false</AutoExposure>
+              <BlackReference Status="Valid">false</BlackReference>
+              <ReferenceImageCount Status="Valid">3</ReferenceImageCount>
+              <ShadingReferenceId Status="Valid">None</ShadingReferenceId>
+              <Binning Status="Valid">1,1</Binning>
+            </Camera>
+          </Detectors>
+          <Devices />
+        </AcquisitionModeSetup>
+        <AutoImmersionSetup IsActivated="false">
+          <ImmersionTimeInterval>30</ImmersionTimeInterval>
+          <ImmersionFillDuration>10</ImmersionFillDuration>
+          <ImmersionRemovePositionX>INF</ImmersionRemovePositionX>
+          <ImmersionRemovePositionY>INF</ImmersionRemovePositionY>
+        </AutoImmersionSetup>
+        <BleachingSetup IsActivated="false">
+          <BleachSettingsName>not defined</BleachSettingsName>
+          <BleachSettingsType></BleachSettingsType>
+        </BleachingSetup>
+        <DynamicsSetup IsActivated="false" GraphicScale="1">
+          <Appliances>
+            <MeasurementSettings />
+          </Appliances>
+        </DynamicsSetup>
+        <ExperimentRegionsSetup IsActivated="false">
+          <FitFrameSizeToRegions>false</FitFrameSizeToRegions>
+          <UseStageCoordinates>false</UseStageCoordinates>
+          <Regions />
+        </ExperimentRegionsSetup>
+        <FocusSetup IsActivated="true">
+          <RepetitionSettingsMode>Standard</RepetitionSettingsMode>
+          <FocusStrategy IsActivated="true">
+            <StrategyMode>LocalFocusSurface</StrategyMode>
+            <ReferenceChannelId>634721599431325723</ReferenceChannelId>
+            <IsFocussingOnAllTracks>false</IsFocussingOnAllTracks>
+            <IsFocussingBeforeAcquisition>true</IsFocussingBeforeAcquisition>
+            <FixedZPosition>0</FixedZPosition>
+            <UseZPositionFromTilesSetup>false</UseZPositionFromTilesSetup>
+            <ExecutionInTileRegionMode>CenterOfRegion</ExecutionInTileRegionMode>
+            <SupportPointsMode>FixedZPosition</SupportPointsMode>
+            <FocusZStackMode>FixedZ</FocusZStackMode>
+            <WaitPositionMode>CenterOfFirstRegion</WaitPositionMode>
+            <WaitPositionX>0</WaitPositionX>
+            <WaitPositionY>0</WaitPositionY>
+            <WaitPositionZ>0</WaitPositionZ>
+            <IsUpdatePositionedRegionsToClientEnabled>false</IsUpdatePositionedRegionsToClientEnabled>
+            <PositionedRegionsUpdateMode>CumulatedPositions</PositionedRegionsUpdateMode>
+            <BreakAfterSupportPointsDetermination>false</BreakAfterSupportPointsDetermination>
+            <ErrorNotificationHints>None</ErrorNotificationHints>
+            <TimeSeriesIntervalInfo>
+              <IsActivated>false</IsActivated>
+              <IsMainIntervalEnabled>true</IsMainIntervalEnabled>
+              <IsSubIntervalEnabled>false</IsSubIntervalEnabled>
+              <MainInterval>1</MainInterval>
+              <SubInterval>1</SubInterval>
+            </TimeSeriesIntervalInfo>
+            <RegionsIntervalInfo>
+              <IsActivated>false</IsActivated>
+              <IsMainIntervalEnabled>true</IsMainIntervalEnabled>
+              <IsSubIntervalEnabled>false</IsSubIntervalEnabled>
+              <MainInterval>1</MainInterval>
+              <SubInterval>1</SubInterval>
+            </RegionsIntervalInfo>
+            <TilesIntervalInfo>
+              <IsActivated>false</IsActivated>
+              <IsMainIntervalEnabled>true</IsMainIntervalEnabled>
+              <IsSubIntervalEnabled>false</IsSubIntervalEnabled>
+              <MainInterval>1</MainInterval>
+              <SubInterval>1</SubInterval>
+            </TilesIntervalInfo>
+            <HardwareAutofocusOptions>
+              <IsSupportedBySoftwareAutofocus>false</IsSupportedBySoftwareAutofocus>
+            </HardwareAutofocusOptions>
+            <HardwareAutofocusSupportPointsModeOptions>
+              <IsSupportedBySoftwareAutofocus>false</IsSupportedBySoftwareAutofocus>
+            </HardwareAutofocusSupportPointsModeOptions>
+          </FocusStrategy>
+          <Autofocus Id="Autofocus">
+            <AutofocusStrategyMode Status="Valid">Software</AutofocusStrategyMode>
+            <AutofocusSignalQualityThreshold Status="Valid">50</AutofocusSignalQualityThreshold>
+          </Autofocus>
+          <HardwareAutofocus Id="MTBAutoFocus">
+            <Period>0</Period>
+            <AutofocusMountingAngle>0</AutofocusMountingAngle>
+            <AutofocusPositionOffset>0</AutofocusPositionOffset>
+            <AutofocusOperationMode>Exact</AutofocusOperationMode>
+            <AutofocusSpecimenType>Reflective</AutofocusSpecimenType>
+          </HardwareAutofocus>
+          <SoftwareAutofocus>
+            <ActiveCamera>MTBCamera_MTBIntermediateTube_Left</ActiveCamera>
+            <ReflectionMode>Disabled</ReflectionMode>
+            <AutofocusRegion>
+              <X>0</X>
+              <Y>0</Y>
+              <DX>1</DX>
+              <DY>1</DY>
+            </AutofocusRegion>
+            <BacklashStepsize>2</BacklashStepsize>
+            <DepthOfFocus>3.11</DepthOfFocus>
+            <DoBacklashCorrection>-1</DoBacklashCorrection>
+            <DoBleachingCorrection>true</DoBleachingCorrection>
+            <FactorGaussianFitStepsize>10</FactorGaussianFitStepsize>
+            <InitialDirection>1</InitialDirection>
+            <IsAutomaticRange>true</IsAutomaticRange>
+            <LowerLimit>100</LowerLimit>
+            <Precision>4</Precision>
+            <PredefinedStepsize>Optimal</PredefinedStepsize>
+            <SharpnessMeasureMethod>Auto</SharpnessMeasureMethod>
+            <RelativeSearchRange>124.39999999999999</RelativeSearchRange>
+            <SearchRangeType>Relative</SearchRangeType>
+            <SearchStrategy>Exhaustive</SearchStrategy>
+            <SharpnessMeasureSet Name="Best">
+              <SharpnessMeasure DecisionWeight="1" ScoreType="HaarGradient">
+                <Parameters>
+                  <Parameter>1</Parameter>
+                </Parameters>
+              </SharpnessMeasure>
+              <SharpnessMeasure DecisionWeight="2" ScoreType="HaarGradient">
+                <Parameters>
+                  <Parameter>2</Parameter>
+                </Parameters>
+              </SharpnessMeasure>
+              <SharpnessMeasure DecisionWeight="3" ScoreType="HaarGradient">
+                <Parameters>
+                  <Parameter>3</Parameter>
+                </Parameters>
+              </SharpnessMeasure>
+            </SharpnessMeasureSet>
+            <UpperLimit>-100</UpperLimit>
+            <UseAcquisitionROI>true</UseAcquisitionROI>
+            <UseCameraParameters>false</UseCameraParameters>
+            <UseChannelInformation>true</UseChannelInformation>
+          </SoftwareAutofocus>
+          <DefiniteFocus IsActivated="false">
+            <IsPeriodicStabilization>false</IsPeriodicStabilization>
+            <Period>10</Period>
+            <OperationMode>Exact</OperationMode>
+            <IsPausedDuringAcquisition>true</IsPausedDuringAcquisition>
+            <SkipInitialization>false</SkipInitialization>
+            <DelayOnFirstTileInRegion>0</DelayOnFirstTileInRegion>
+          </DefiniteFocus>
+        </FocusSetup>
+        <LinkamRampSetup IsActivated="false">
+          <Rate>0</Rate>
+          <Limit>0</Limit>
+          <HoldTime>0</HoldTime>
+          <RampType>None</RampType>
+        </LinkamRampSetup>
+        <RatioSetup IsActivated="false">
+          <IsRatioImageGenerated>false</IsRatioImageGenerated>
+          <SelectedColorMode>Palette</SelectedColorMode>
+          <Color>#00FFFFFF</Color>
+          <PaletteName>rainbow</PaletteName>
+          <RatioDisplayMinimum>0</RatioDisplayMinimum>
+          <RatioDisplayMaximum>10</RatioDisplayMaximum>
+          <RatioMethod>SingleWavelength</RatioMethod>
+          <SelectedReferenceIdChannel1>0</SelectedReferenceIdChannel1>
+          <SelectedReferenceIdChannel2>0</SelectedReferenceIdChannel2>
+          <RatioBackgroundCorrection>None</RatioBackgroundCorrection>
+          <BackgroundCorrectionChannel1>0</BackgroundCorrectionChannel1>
+          <BackgroundCorrectionChannel2>0</BackgroundCorrectionChannel2>
+          <AverageFrame>5</AverageFrame>
+          <Multiplicator>1</Multiplicator>
+          <IsOptionalThreshold>false</IsOptionalThreshold>
+          <OptionalThresholdChannel1>0</OptionalThresholdChannel1>
+          <OptionalThresholdChannel2>0</OptionalThresholdChannel2>
+          <IsRatioCalculationEnabled>true</IsRatioCalculationEnabled>
+          <IsRatioReferenceImageDefined>true</IsRatioReferenceImageDefined>
+          <AverageStartFrame>1</AverageStartFrame>
+          <AverageEndFrame>1</AverageEndFrame>
+        </RatioSetup>
+        <TempSeriesSetup IsActivated="false">
+          <TemperatureStep>0</TemperatureStep>
+        </TempSeriesSetup>
+        <VivaTome2AcquisitionModeSetup IsActivated="true">
+          <AcquisitionMode>OpticalSectioning</AcquisitionMode>
+          <IsShadingCorrection>false</IsShadingCorrection>
+          <IsNormalization>false</IsNormalization>
+          <Averaging>1</Averaging>
+        </VivaTome2AcquisitionModeSetup>
+        <CPMFocusSetup IsActivated="false">
+          <StrategyMode>None</StrategyMode>
+          <UseAutoBC>false</UseAutoBC>
+          <ScanSpeedForBCTraining>0</ScanSpeedForBCTraining>
+        </CPMFocusSetup>
+      </HelperSetups>
+    </AcquisitionBlock>
+  </ExperimentBlocks>
+  <HardwareSettingsPool>
+    <HardwareSetting Name="RFP">
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed Status="Valid" IsActivated="true">true</IsClosed>
+      </TransmittedLightShutter>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position Status="Valid" IsActivated="true">3</Position>
+        <PositionName Status="Valid" IsActivated="true">Reflector.000000-1031-350</PositionName>
+      </ReflectorChanger>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position Status="Valid" IsActivated="true">3</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod Status="Valid" IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode Status="Valid" IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode Status="Valid" IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing Status="Valid" IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed Status="Valid" IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection Status="Valid" IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary Status="Valid" IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection Status="Valid" IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling Status="Valid" IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary Status="Valid" IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+      <ReflectedLightRearportChanger Id="MTBRLRearportChanger">
+        <Position Status="Valid" IsActivated="true">2</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.RL_Rearport_FL</PositionName>
+      </ReflectedLightRearportChanger>
+      <HXP120Shutter Id="MTBHXP120Shutter">
+        <IsClosed Status="Valid" IsActivated="true">false</IsClosed>
+      </HXP120Shutter>
+    </HardwareSetting>
+    <HardwareSetting Name="GFP">
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed IsActivated="true">true</IsClosed>
+      </TransmittedLightShutter>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Reflector.000000-1031-346</PositionName>
+      </ReflectorChanger>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position IsActivated="true">3</Position>
+        <PositionName IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+      <ReflectedLightRearportChanger Id="MTBRLRearportChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Aquila.RL_Rearport_FL</PositionName>
+      </ReflectedLightRearportChanger>
+      <HXP120Shutter Id="MTBHXP120Shutter">
+        <IsClosed Status="Valid" IsActivated="true">false</IsClosed>
+      </HXP120Shutter>
+    </HardwareSetting>
+    <HardwareSetting Name="BFclose">
+      <ReflectedTransmittedLightSwitch Id="MTBRLTLSwitch">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">RLTLSwitch.TL</PositionName>
+      </ReflectedTransmittedLightSwitch>
+      <TransmittedLightHalogenLamp Id="MTBTLHalogenLamp">
+        <LampMode Status="Valid" IsActivated="true">Manual</LampMode>
+        <Intensity Status="Valid" IsActivated="true">2.3277886497065</Intensity>
+      </TransmittedLightHalogenLamp>
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed Status="Valid" IsActivated="true">true</IsClosed>
+      </TransmittedLightShutter>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">Reflector.none</PositionName>
+      </ReflectorChanger>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position Status="Valid" IsActivated="true">3</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod Status="Valid" IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode Status="Valid" IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode Status="Valid" IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing Status="Valid" IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed Status="Valid" IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection Status="Valid" IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary Status="Valid" IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection Status="Valid" IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling Status="Valid" IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary Status="Valid" IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+    </HardwareSetting>
+    <HardwareSetting Name="BF">
+      <ReflectedTransmittedLightSwitch Id="MTBRLTLSwitch">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">RLTLSwitch.TL</PositionName>
+      </ReflectedTransmittedLightSwitch>
+      <TransmittedLightHalogenLamp Id="MTBTLHalogenLamp">
+        <LampMode Status="Valid" IsActivated="true">Manual</LampMode>
+        <Intensity Status="Valid" IsActivated="true">3.7908030400119</Intensity>
+      </TransmittedLightHalogenLamp>
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed Status="Valid" IsActivated="true">false</IsClosed>
+      </TransmittedLightShutter>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position Status="Valid" IsActivated="true">3</Position>
+        <PositionName Status="Valid" IsActivated="true">Reflector.000000-1031-350</PositionName>
+      </ReflectorChanger>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position Status="Valid" IsActivated="true">1</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position Status="Valid" IsActivated="true">3</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod Status="Valid" IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode Status="Valid" IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode Status="Valid" IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing Status="Valid" IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed Status="Valid" IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection Status="Valid" IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary Status="Valid" IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection Status="Valid" IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling Status="Valid" IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary Status="Valid" IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+    </HardwareSetting>
+    <HardwareSetting Name="GFP_camera">
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed IsActivated="true">true</IsClosed>
+      </TransmittedLightShutter>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Reflector.000000-1031-346</PositionName>
+      </ReflectorChanger>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position Status="Valid" IsActivated="true">3</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+      <ReflectedLightRearportChanger Id="MTBRLRearportChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Aquila.RL_Rearport_FL</PositionName>
+      </ReflectedLightRearportChanger>
+      <HXP120Shutter Id="MTBHXP120Shutter">
+        <IsClosed IsActivated="true">false</IsClosed>
+      </HXP120Shutter>
+    </HardwareSetting>
+    <HardwareSetting Name="ActualHardware1 - After">
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position IsActivated="true">3</Position>
+        <PositionName IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Reflector.000000-1031-346</PositionName>
+      </ReflectorChanger>
+      <ReflectedLightRearportChanger Id="MTBRLRearportChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Aquila.RL_Rearport_FL</PositionName>
+      </ReflectedLightRearportChanger>
+      <ReflectedTransmittedLightSwitch Id="MTBRLTLSwitch">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">RLTLSwitch.TL</PositionName>
+      </ReflectedTransmittedLightSwitch>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <TransmittedLightHalogenLamp Id="MTBTLHalogenLamp">
+        <Intensity IsActivated="true">2.3277886497065</Intensity>
+        <LampMode IsActivated="true">Manual</LampMode>
+      </TransmittedLightHalogenLamp>
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed IsActivated="true">true</IsClosed>
+      </TransmittedLightShutter>
+      <HXP120Shutter Id="MTBHXP120Shutter">
+        <IsClosed IsActivated="true">true</IsClosed>
+      </HXP120Shutter>
+    </HardwareSetting>
+    <HardwareSetting Name="RFP_camera">
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed IsActivated="true">true</IsClosed>
+      </TransmittedLightShutter>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position IsActivated="true">3</Position>
+        <PositionName IsActivated="true">Reflector.000000-1031-350</PositionName>
+      </ReflectorChanger>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position IsActivated="true">3</Position>
+        <PositionName IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+      <ReflectedLightRearportChanger Id="MTBRLRearportChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Aquila.RL_Rearport_FL</PositionName>
+      </ReflectedLightRearportChanger>
+      <HXP120Shutter Id="MTBHXP120Shutter">
+        <IsClosed IsActivated="true">false</IsClosed>
+      </HXP120Shutter>
+    </HardwareSetting>
+    <HardwareSetting Name="GFP_Off">
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed IsActivated="true">true</IsClosed>
+      </TransmittedLightShutter>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Reflector.000000-1031-346</PositionName>
+      </ReflectorChanger>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position Status="Valid" IsActivated="true">3</Position>
+        <PositionName Status="Valid" IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+      <ReflectedLightRearportChanger Id="MTBRLRearportChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Aquila.RL_Rearport_FL</PositionName>
+      </ReflectedLightRearportChanger>
+      <HXP120Shutter Id="MTBHXP120Shutter">
+        <IsClosed Status="Valid" IsActivated="true">true</IsClosed>
+      </HXP120Shutter>
+    </HardwareSetting>
+    <HardwareSetting Name="RFP_Off">
+      <TransmittedLightShutter Id="MTBTLShutter">
+        <IsClosed IsActivated="true">true</IsClosed>
+      </TransmittedLightShutter>
+      <ReflectorChanger Id="MTBReflectorChanger">
+        <Position IsActivated="true">3</Position>
+        <PositionName IsActivated="true">Reflector.000000-1031-350</PositionName>
+      </ReflectorChanger>
+      <OptovarChanger Id="MTBOptovarChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.Tubelens 1.0x</PositionName>
+      </OptovarChanger>
+      <SideportChanger Id="MTBSideportChanger">
+        <Position IsActivated="true">1</Position>
+        <PositionName IsActivated="true">Aquila.SideportElement_100%BP</PositionName>
+      </SideportChanger>
+      <BaseportChanger Id="MTBBaseportChanger">
+        <Position IsActivated="true">3</Position>
+        <PositionName IsActivated="true">Aquila.BaseportElement_FP</PositionName>
+      </BaseportChanger>
+      <MicroscopeManager Id="MTBMicroscopeManager">
+        <ContrastManagerContrastMethod IsActivated="true">0</ContrastManagerContrastMethod>
+        <ContrastManagerMode IsActivated="true">OnDemand</ContrastManagerMode>
+        <LightManagerMode IsActivated="true">Objective</LightManagerMode>
+        <IsCondenserFocusing IsActivated="true">false</IsCondenserFocusing>
+        <IsCurrentFeed IsActivated="true">false</IsCurrentFeed>
+        <IsDazzleProtection IsActivated="true">true</IsDazzleProtection>
+        <IsLightManagerTemporary IsActivated="true">false</IsLightManagerTemporary>
+        <IsParfocalCorrection IsActivated="true">true</IsParfocalCorrection>
+        <IsLoadWorkCoupling IsActivated="true">false</IsLoadWorkCoupling>
+        <IsVignettingFreeModeTemporary IsActivated="true">false</IsVignettingFreeModeTemporary>
+      </MicroscopeManager>
+      <ReflectedLightRearportChanger Id="MTBRLRearportChanger">
+        <Position IsActivated="true">2</Position>
+        <PositionName IsActivated="true">Aquila.RL_Rearport_FL</PositionName>
+      </ReflectedLightRearportChanger>
+      <HXP120Shutter Id="MTBHXP120Shutter">
+        <IsClosed Status="Valid" IsActivated="true">true</IsClosed>
+      </HXP120Shutter>
+    </HardwareSetting>
+  </HardwareSettingsPool>
+  <ExperimentFeedback IsActivated="false">
+    <IsSynchronous>true</IsSynchronous>
+    <IsSynchronousToAnalysis>true</IsSynchronousToAnalysis>
+    <IsSynchronousToFile>false</IsSynchronousToFile>
+    <AllowNonExperimentObservablesToTriggerScript>false</AllowNonExperimentObservablesToTriggerScript>
+    <DeadlockTimeout>10</DeadlockTimeout>
+    <PreScript></PreScript>
+    <LoopScript></LoopScript>
+    <PostScript></PostScript>
+    <Actions />
+  </ExperimentFeedback>
+  <AdditionalSettings />
+</HardwareExperiment>
