@@ -1,4 +1,7 @@
 import xml.etree.ElementTree as ET
+import os
+from datetime import datetime
+
 
 def extract_well_coordinates(xml_file):
     tree = ET.parse(xml_file)
@@ -13,6 +16,7 @@ def extract_well_coordinates(xml_file):
 
     return coordinates
 
+
 def extract_positions_from_xml(xml_file):
     tree = ET.parse(xml_file)
     root = tree.getroot()
@@ -24,6 +28,7 @@ def extract_positions_from_xml(xml_file):
         positions.append((x, y))
 
     return positions
+
 
 def calculate_all_well_centers(coords):
     REFERENCE_WELL = 'A6'
@@ -57,6 +62,7 @@ def calculate_all_well_centers(coords):
 
     return well_centers
 
+
 def apply_positions_to_wells(well_centers, positions, center_of_b6):
     well_positions = {}
     x_center_b6, y_center_b6 = center_of_b6
@@ -68,6 +74,30 @@ def apply_positions_to_wells(well_centers, positions, center_of_b6):
         well_positions[well] = [(center_x + dx, center_y + dy) for dx, dy in positions_relative_to_b6]
 
     return well_positions
+
+
+def write_positions_to_file(output_folder, well, positions, template_file):
+    tree = ET.parse(template_file)
+    root = tree.getroot()
+    single_tile_regions = root.find('.//SingleTileRegions')
+
+    # Remove existing regions
+    for region in list(single_tile_regions):
+        single_tile_regions.remove(region)
+
+    for i, (x, y) in enumerate(positions):
+        region = ET.Element("SingleTileRegion", Name=f"P{i + 1}")
+        ET.SubElement(region, "X").text = str(x)
+        ET.SubElement(region, "Y").text = str(y)
+        ET.SubElement(region, "Z").text = "5048.87"  # Adjust Z if needed
+        ET.SubElement(region, "IsUsedForAcquisition").text = "true"
+        single_tile_regions.append(region)
+
+    # Create output directory if it doesn't exist
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    tree.write(os.path.join(output_folder, f"{well}.czexp"), encoding="utf-8", xml_declaration=True)
 
 
 def main():
@@ -90,11 +120,13 @@ def main():
     # Apply positions to all wells
     well_positions = apply_positions_to_wells(well_centers, positions, center_of_b6)
 
-    # Print results
+    # Create the output folder path with the current date
+    current_date = datetime.now().strftime("%Y%m%d")
+    output_folder = os.path.join("..", "output", f"{current_date}_24wp_25positions")
+
+    # Write positions to files
     for well, positions in well_positions.items():
-        print(f"Well {well}:")
-        for i, (x, y) in enumerate(positions):
-            print(f"  Position {i+1}: X = {x}, Y = {y}")
+        write_positions_to_file(output_folder, well, positions, positions_file)
 
 
 if __name__ == '__main__':
