@@ -16,7 +16,6 @@ def extract_well_coordinates(xml_file):
 
     return coordinates
 
-
 def extract_positions_from_xml(xml_file):
     tree = ET.parse(xml_file)
     root = tree.getroot()
@@ -30,50 +29,37 @@ def extract_positions_from_xml(xml_file):
     return positions
 
 
-REFERENCE_WELL = 'A6'
-
-
-def calculate_all_well_centers(coords):
-    x_a6, y_a6 = coords.get('A6', (None, None))
-    x_a5, y_a5 = coords.get('A5', (None, None))
-    x_b6, y_b6 = coords.get('B6', (None, None))
-
-    if None in (x_a6, y_a6, x_a5, y_a5, x_b6, y_b6):
-        raise ValueError("Missing coordinates for one or more wells.")
-
-    horizontal_distance = x_a6 - x_a5
-    vertical_distance = y_a6 - y_b6
-
+def calculate_all_well_centers_from_reference(reference_well, reference_coords, horizontal_distance, vertical_distance):
+    ref_x, ref_y = reference_coords
     rows = 'ABCD'
     cols = '123456'
 
     well_centers = {}
     for row in rows:
-        y_offset = (ord(row) - ord(REFERENCE_WELL[0])) * vertical_distance
+        y_offset = (ord(row) - ord(reference_well[0])) * vertical_distance
 
         for col in cols:
             well_name = f"{row}{col}"
 
-            if well_name == 'A6':
-                ref_x, ref_y = x_a6, y_a6
+            if well_name == reference_well:
+                well_centers[well_name] = (ref_x, ref_y)
             else:
-                ref_x = x_a6 + (int(col) - int(REFERENCE_WELL[1])) * horizontal_distance
-                ref_y = y_a6 - y_offset
-
-            well_centers[well_name] = (ref_x, ref_y)
+                ref_x_offset = ref_x + (int(col) - int(reference_well[1])) * horizontal_distance
+                ref_y_offset = ref_y - y_offset
+                well_centers[well_name] = (ref_x_offset, ref_y_offset)
 
     return well_centers
 
 
-def apply_positions_to_wells(well_centers, positions, center_of_b6):
+def apply_positions_to_wells(well_centers, positions, center_of_b6_from_previous_plate):
     well_positions = {}
-    x_center_b6, y_center_b6 = center_of_b6
+    x_center_b6_prev, y_center_b6_prev = center_of_b6_from_previous_plate
 
-    # Calculate relative positions from B6
-    positions_relative_to_b6 = [(x - x_center_b6, y - y_center_b6) for x, y in positions]
+    # Calculate relative positions from the previous plate's B6
+    positions_relative_to_b6_prev = [(x - x_center_b6_prev, y - y_center_b6_prev) for x, y in positions]
 
     for well, (center_x, center_y) in well_centers.items():
-        well_positions[well] = [(center_x + dx, center_y + dy) for dx, dy in positions_relative_to_b6]
+        well_positions[well] = [(center_x + dx, center_y + dy) for dx, dy in positions_relative_to_b6_prev]
 
     return well_positions
 
@@ -102,9 +88,10 @@ def write_positions_to_file(output_folder, well, positions, template_file):
     tree.write(os.path.join(output_folder, f"{well}.czexp"), encoding="utf-8", xml_declaration=True)
 
 
-# Define the paths to your XML files
-WELL_COORDINATES_FILE = '../data/LA_220724_centres.czexp'
+REFERENCE_WELL = 'A1'
+REFERENCE_WELL_COORDINATES = (41873, 26300.75)  # Example coordinates for the reference well
 POSITIONS_FILE = '../data/LA2_220724_25positions.czexp'
+WELL_COORDINATES_FILE = '../data/LA_220724_centres.czexp'
 
 
 def main():
@@ -112,21 +99,30 @@ def main():
     coordinates = extract_well_coordinates(WELL_COORDINATES_FILE)
     positions = extract_positions_from_xml(POSITIONS_FILE)
 
-    # Calculate all well centers
-    well_centers = calculate_all_well_centers(coordinates)
+    # Extract distances from the coordinates
+    x_a6, y_a6 = coordinates.get('A6', (None, None))
+    x_a5, y_a5 = coordinates.get('A5', (None, None))
+    x_b6, y_b6 = coordinates.get('B6', (None, None))
+
+    if None in (x_a6, y_a6, x_a5, y_a5, x_b6, y_b6):
+        raise ValueError("Missing coordinates for one or more wells.")
+
+    horizontal_distance = x_a6 - x_a5
+    vertical_distance = y_a6 - y_b6
+
+    # Calculate all well c
+    # enters based on the reference well
+    well_centers = calculate_all_well_centers_from_reference(REFERENCE_WELL, REFERENCE_WELL_COORDINATES, horizontal_distance, vertical_distance)
     print("Well Centers:")
     for well, (x, y) in well_centers.items():
         print(f"{well}: X = {x}, Y = {y}")
 
-    # Get the center of well B6
-    center_of_b6 = well_centers.get('B6', (None, None))
-    if None in center_of_b6:
-        raise ValueError("Missing coordinates for well B6.")
-
+    # Get the center of B6 from the previous plate - Using x_a6 as in main.py (Lara said it might be more accurate)
+    center_of_b6_from_previous_plate = (x_a6, y_b6)
     # Apply positions to all wells
-    well_positions = apply_positions_to_wells(well_centers, positions, center_of_b6)
+    well_positions = apply_positions_to_wells(well_centers, positions, center_of_b6_from_previous_plate)
 
-    # Create the output folder path with the current date
+    # Create the output folder path with the current date and time
     current_datetime = datetime.now().strftime("%Y%m%d_%H%M")
     output_folder = os.path.join("..", "output", f"{current_datetime}_24wp_25positions")
 
@@ -137,3 +133,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
